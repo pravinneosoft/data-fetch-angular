@@ -1,0 +1,31 @@
+
+<div class="container">
+<div class="search">
+<div class="wrapper" >
+<div class="row g-4 mb-3">
+  <!-- <div class="col-sm-3">
+    <img class="search-item-img"
+    src="{{items.image}}" alt="">
+  </div>
+  <div class="col-sm-8 search-details">
+   
+    <p class="search-details-desc">
+    <span>{{items.category}}</span>
+    </p>
+  </div> -->
+  <div class="col-auto"*ngFor="let items of searchvalue">
+  <div class="product-items">
+    <img
+      class="product_card-images"
+      src={{items.image}}
+      alt="mobile image"
+    />
+   
+  </div>
+  <p style="display: none;">{{items.category}}</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>

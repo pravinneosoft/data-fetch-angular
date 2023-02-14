@@ -1,0 +1,39 @@
+.wrapper{
+
+  display: inline-block;
+  width: 700px;
+  border-radius: 4px;
+
+  margin: 12px 0;
+
+}
+.search{
+  display: flex;
+  justify-content: center;
+}
+.search-details{
+  align-self: center;
+}
+.search-details-title{
+  font-size: 28px;
+  font-weight: 700;
+  color: blueviolet;
+
+}
+.search-details-text{
+  font-size: 20px;
+  font-weight:500;
+  color: #000;
+}
+.search-details-desc{
+  color: #252525;
+  font-size: 19px;
+  font-weight: 500;
+}
+.search-item{
+  background: aliceblue;
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 7px 3px #00000069;
+    padding: 26px 10px;
+
+}

@@ -1,0 +1,15 @@
+
+      <header>
+      <div class="container">
+      <form *ngIf="menutype==='default'" class="form-inline form-search my-2 my-lg-0">
+        <input class="inner-search "(keyup)="searchproducts($event)" #searchinput type="search" placeholder="Search Products Here" aria-label="Search">
+        <button class="btn search-btn my-2 my-sm-0"(click)="searchsubmit(searchinput.value)" type="submit">Search</button>
+        <ul class="searchlist">
+          <li *ngFor="let items of searchvalues">
+            <a  href=""class="searchlist-links">{{items.category}}</a>
+          </li>
+        </ul>
+      </form></div>
+    </header>
+
+

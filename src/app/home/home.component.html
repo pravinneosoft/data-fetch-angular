@@ -1,0 +1,22 @@
+<div class="container">
+ 
+
+  
+
+  <div class="flexible">
+    <div class="cards" *ngFor="let praducts of trendproduct | paginate: { itemsPerPage: 10, currentPage: p }">
+      <div class="product-items">
+        <img
+          class="product_card-images"
+          src={{praducts.image}}
+          alt="mobile image"
+        />
+       
+      </div>
+      <p style="display: none;">{{praducts.category}}</p>
+    </div>
+
+  </div>
+
+  <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls>
+</div>
